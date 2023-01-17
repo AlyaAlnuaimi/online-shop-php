@@ -28,10 +28,12 @@ function get_row($q)
         return null;
     }
     $q = $con->query($q);
+    // display the product
     $row = $q->fetch_assoc();
     $con->close();
     return $row;
 }
+// make an action in DB without display the information 
 function execute($q)
 {
     $result = false;
