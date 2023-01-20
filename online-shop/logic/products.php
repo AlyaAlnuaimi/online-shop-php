@@ -9,7 +9,6 @@ function getProducts($where = '1=1', $limit = '')
 	LEFT JOIN (SELECT product_id,AVG(rate) rating,COUNT(0) rating_count FROM `ratings` GROUP BY product_id) r ON r.product_id = p.id
     WHERE $where 
     $limit";
-    // GET_ROW : THE FUNCTION TO CONNECT WITH DB 
     return get_rows($query);
 }
 

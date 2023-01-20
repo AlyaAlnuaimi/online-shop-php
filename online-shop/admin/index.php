@@ -1,7 +1,6 @@
 <?php 
 require_once('./layouts/header.php');
 ?>
-
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
